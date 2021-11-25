@@ -1,0 +1,41 @@
+var fname = document.forms['myForm']['fname'];
+var lname = document.forms['myForm']['lname'];
+var ename = document.forms['myForm']['ename'];
+var uname = document.forms['myForm']['uname'];
+var pname = document.forms['myForm']['pname'];
+var letter = /^[A-Za-z]+$/;
+var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}$/;
+var url = /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/;
+var error = document.getElementById('alert');
+function validation() {
+    if (fname.value == "") {
+        error.innerHTML = "Username must be filled";
+        error.style.display = "block";
+        return false;
+    }
+    else if (!fname.value.match(letter)) {
+        alert("Please input Alphabet only in First name section");
+        return false;
+    }
+    else if (ename.value == "") {
+        error.innerHTML = "Email must be filled";
+        error.style.display = "block";
+        return false;
+    }
+    else if (!ename.value.match(email)) {
+        alert("Please input valid email only");
+        return false;
+    }
+    else if (pname.value == "") {
+        error.innerHTML = "Password number must be filled";
+        error.style.display = "block";
+        return false;
+    }
+    else if (!pname.value.match(password)) {
+        alert(" Please enter atleast one capital , one small, and numbers");
+        return false;
+    }
+
+    return true;
+}

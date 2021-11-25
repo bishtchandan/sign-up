@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    border: none;
+}
+
+body{
+    background-color: rgb(245, 112, 89);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 600px;
+    margin: 4.5rem auto;
+    border: 6px solid rgb(6, 172, 238);
+    background-color: #fff;
+}
+
+form{
+    margin-top: 1rem;
+}
+
+form label{
+    font-size: 1.7rem;
+    margin: 1.5rem 0;
+}
+
+form span{
+    color: red;
+    font-size: 1.7rem;
+}
+
+.name{
+    height: 3rem;
+    width: 30rem;
+    margin: 1.5rem 0;
+    border: 2px solid #666;
+    border-radius: 4px;
+}
+.name input{
+    font-size: 1.5rem;
+    padding: .5rem 3rem;
+    height: 1.7rem;
+    width: 23.7rem;
+    border: 2px solid #fff;
+}
+
+.sign{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(23, 134, 179);
+    color: white;
+    height: 4rem;
+    width: 15rem;
+    align-items: center;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.btn{
+    height: 2rem;
+    width: 6rem;
+    margin-left: 11rem;
+    background-color: rgb(17, 133, 179);
+    border: 2px solid rgb(17, 131, 177);
+    color: white;
+    font-size: 1.2rem;
+    margin-top: .2rem;
+}
+
+#alert{
+    font-size: 1rem;
+    color: red;
+}
