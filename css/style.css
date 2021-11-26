@@ -5,9 +5,9 @@
     border: none;
 }
 
-
 body{
     background-color: rgb(245, 112, 89);
+    overflow: hidden;
 }
 
 .box{
@@ -36,18 +36,12 @@ form span{
 }
 
 .name{
-    height: 3rem;
+    display: flex;
+    padding: .5rem 0;
     width: 100%;
     margin: 1.5rem 0;
     border: 2px solid #666;
     border-radius: 4px;
-}
-.name input{
-    font-size: 1.5rem;
-    padding: .5rem 3rem;
-    height: 1.7rem;
-    width: 23.7rem;
-    border: 2px solid #fff;
 }
 
 .sign{
@@ -55,7 +49,7 @@ form span{
     justify-content: center;
     background-color: rgb(23, 134, 179);
     color: white;
-    height: 4rem;
+    padding: .8rem 0;
     width: 15rem;
     align-items: center;
     text-align: center;
@@ -63,7 +57,7 @@ form span{
 }
 
 .btn{
-    height: 2rem;
+    padding: .2rem 0;
     width: 6rem;
     margin-left: 11rem;
     background-color: rgb(17, 133, 179);
@@ -82,21 +76,19 @@ form span{
 @media screen and (max-width: 700px) {
     
     .box{
-        height: 90vh;
+        height: 75vh;
         width: 300px;
     }
-    .name input{
-        height: 1rem;
-        font-size: .7rem;
-        width: 9rem;
-    }
     .name{
-        margin: 1.5rem 0;
-        height: 2.3rem;
-        width: 100%;
+        margin: 1rem 0;
+        padding: .5rem .8rem;
+        width: 90%;
     }
     .btn{
-        margin-left: 5rem;
-        margin-top: 2rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+    #alert{
+        font-size: .6rem;
     }
 }
