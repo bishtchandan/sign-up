@@ -15,7 +15,7 @@ function validation() {
         return false;
     }
     else if (!fname.value.match(letter)) {
-        alert("Please input Alphabet only in First name section");
+        alert("Please input Alphabet only in UserName section");
         return false;
     }
     else if (ename.value == "") {
@@ -28,11 +28,12 @@ function validation() {
         return false;
     }
     else if (pname.value == "") {
-        error.innerHTML = "Password number must be filled";
+        error.innerHTML = "Password must be filled";
         error.style.display = "block";
         return false;
     }
     else if (!pname.value.match(password)) {
+        error.innerHTML = "length of password not less than 6 characters "
         alert(" Please enter atleast one capital , one small, and numbers");
         return false;
     }

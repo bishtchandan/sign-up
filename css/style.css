@@ -5,6 +5,7 @@
     border: none;
 }
 
+
 body{
     background-color: rgb(245, 112, 89);
 }
@@ -36,7 +37,7 @@ form span{
 
 .name{
     height: 3rem;
-    width: 30rem;
+    width: 100%;
     margin: 1.5rem 0;
     border: 2px solid #666;
     border-radius: 4px;
@@ -75,4 +76,27 @@ form span{
 #alert{
     font-size: 1rem;
     color: red;
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    .box{
+        height: 90vh;
+        width: 300px;
+    }
+    .name input{
+        height: 1rem;
+        font-size: .7rem;
+        width: 9rem;
+    }
+    .name{
+        margin: 1.5rem 0;
+        height: 2.3rem;
+        width: 100%;
+    }
+    .btn{
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
 }
